@@ -1,11 +1,14 @@
 public Integer maxConsecutiveOnes(Integer[] numbers) {
     //code here
+    List<Integer> l=new List<Integer>();
     Integer c=0,n=numbers.size();
     for(Integer i=0;i<n;i++){
         If(numbers[i]!=0)
         {
             c++;
         }
+        L.add(c);
     }
-    return c;
+    l.sort();
+    return l[l.size()-1];
 }
