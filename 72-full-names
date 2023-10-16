@@ -1,7 +1,7 @@
 public List<String> fullNames(List<String> firstNames, List<String> lastNames) {
     //code here
     List<String> fn =  List<String>();
-    if(firstNames.size()!=null && lastNames.size()!=null && firstNames.size() == lastNames.size()){
+    if(firstNames.size()!=null && lastNames.size()!=null ){
     for(integer i=0;i<firstNames.size();i++)
         {
          String full=firstNames[i] + lastNames[i];
