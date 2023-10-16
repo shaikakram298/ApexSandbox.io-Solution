@@ -1,8 +1,15 @@
 public String aOrAn(String word) {
     //code here
-   if( word.startsWith('a','e','i','o','u'))
-        Word.append(an);
-    
+    if (word != null && !word.isEmpty()) {
+            char firstChar = word.toLowerCase().charAt(0);
+            if (firstChar == 'a' || firstChar == 'e' || firstChar == 'i' || firstChar == 'o' || firstChar == 'u') {
+                return 'an ' + word;
+            } else {
+                return 'a ' + word;
+            }
+        }
+        return word;
+    }
 
       //  word.append(a);
     
