@@ -1,11 +1,13 @@
 public List<String> fullNames(List<String> firstNames, List<String> lastNames) {
     //code here
     List<String> fn =  List<String>();
+    if(firstNames.size()!=null&&lastNames.size()!=null){
     for(integer i=0;i<firstNames.size();i++){
         {
          fn[i].add(firstNames[i]);
          fn[i].add(+lastNames[i]);
         }
+    }
     }
     return fn;
 }
