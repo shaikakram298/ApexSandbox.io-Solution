@@ -1,0 +1,13 @@
+public void insertAtStart(String cityName, List<String> cities) {
+    //code here
+ cities.add(null);
+ if(cities.size()!=null){
+ for(Integer i=cities.size()-1;i>0;i--){
+     cities[i]=cities[i-1];
+ }
+ cities[0]=cityName;
+cities.remove(cities.size()-1);
+        
+    }
+     
+}
