@@ -1,7 +1,6 @@
 public List<Integer> positiveIntegers(List<Integer> numbers) {
     //code here
     if(numbers!=null){
-        numbers.sort();
         for(Integer i=0;i<numbers.size();i++){
             if(numbers[i]<0){
                 numbers.remove(i);
