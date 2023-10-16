@@ -1,6 +1,7 @@
 public List<Integer> evenNumbers(Integer n) {
     //code here
     List<Integer> evenList=List<Integer>();
+    Integer c;
     if(n!=0){
     for(Integer i=1,c=0;c<n,i<n*2;i++){
         if(i/2==0){
