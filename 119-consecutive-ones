@@ -10,7 +10,9 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
         l.add(c);
         else if(numbers[i]==0)
         {
-                continue;
+            c=0;
+            continue;
+                
          }
         
           
