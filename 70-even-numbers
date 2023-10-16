@@ -3,7 +3,7 @@ public List<Integer> evenNumbers(Integer n) {
     List<Integer> evenList=List<Integer>();
     Integer c;
     if(n!=0){
-    for(Integer i=1&&c=0;c<n&&i<n*2;i++){
+    for(Integer i=1 && c=0;c<n && i<n*2; i++){
         if(i/2=0){
             evenList.add(i);
             c++;
