@@ -5,7 +5,7 @@ public List<String> fullNames(List<String> firstNames, List<String> lastNames) {
     for(integer i=0;i<firstNames.size();i++)
         {
          String full= firstNames[i] + lastNames[i];
-         fn.add(full);
+         fn[i].add(full);
         }
     }
     
