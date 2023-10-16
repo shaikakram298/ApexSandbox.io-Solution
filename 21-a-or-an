@@ -1,10 +1,10 @@
 public String aOrAn(String word) {
     //code here
-    If(word.startsWith('a','e','i','o','u')){
+    word.startsWith('a','e','i','o','u')
         Word.append(an);
-    }
-    else {
-        word.append(a);
-    }
+    
+
+      //  word.append(a);
+    
 
 }
