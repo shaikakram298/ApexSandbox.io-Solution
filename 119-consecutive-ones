@@ -7,9 +7,10 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
         {
             c++;
         }
-        l.add(c);
+        
         else if(numbers[i]==0)
         {
+            l.add(c);
             c=0;
             continue;
                 
