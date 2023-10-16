@@ -6,7 +6,7 @@ public void insertAtStart(String cityName, List<String> cities) {
      cities[i]=cities[i-1];
  }
  cities[0]=cityName;
-cities.remove(cities.size()-1);
+
         
     }
      
