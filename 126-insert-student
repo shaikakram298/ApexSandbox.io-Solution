@@ -6,6 +6,6 @@ public Id insertStudent(String name, String email) {
     a1.Name=name;
     a1.apxio__Email__c=email;
     insert a1;
-    return a1[c].Id;
+    return a1.[c]Id;
     c++;
 }
