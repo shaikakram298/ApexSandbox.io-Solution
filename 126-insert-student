@@ -1,13 +1,14 @@
 public Id insertStudent(String name, String email) {
     // code here
+     apxio__Student__c student = new apxio__Student__c();
+    student.Name = name;
+    student.apxio__Email__c = email;
+
     try {
-        apxio__Student__c a = new apxio__Student__c();
-        a.Name = name;
-        a.apxio__Email__c = email;
-        insert a;
-        return a.Id;
-    } catch (DmlException e) {
-        System.debug('An unexpected error has occurred: ' + e.getMessage());
-        return null; // Or handle the exception as per your use case
+        insert student;
+        return student.Id;
+    } catch (Exception e) {
+        System.debug('An error occurred: ' + e.getMessage());
+        return null; // Handle the error as per your use case
     }
 }
