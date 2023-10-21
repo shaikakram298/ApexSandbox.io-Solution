@@ -1,8 +1,9 @@
 public Id insertStudent(String name, String email) {
     // code here
-    apxio__Student__c a=new apxio__Student__c();
-    a.Name= name;
-    a.apxio__Email__c=email;
-    insert a;
-    return a.Id;
+    List<apxio__Student__c> a=new List<apxio__Student__c>();
+    for(apxio__Student__c a1: a)
+    a1.Name=name;
+    a1.apxio__Email__c=email;
+    insert a1;
+    return a1.Id;
 }
