@@ -1,11 +1,22 @@
 public Id insertCourse(String name, String details, Integer credits) {
     // code here
+    List<String> validCredits = new List<String>{'1', '2', '3', '4'};
+    String creditsString = String.valueOf(credits);
+
+    if (!validCredits.contains(creditsString)) {
+        return null; // Return null if an invalid value is provided for the picklist
+    }
+
     apxio__Course__c course = new apxio__Course__c();
-    course.Name=name;
-    course.apxio__Course_Details__c=details;
-    course.apxio__Credits__c=credits;
-    if(credits==1||credits==2||credits==3||credits==4){
+    course.Name = name;
+    course.apxio__Course_Details__c = details;
+    course.apxio__Credits__c = String.valueOf(credits);
+
+    try {
         insert course;
         return course.Id;
+    } catch (Exception e) {
+        System.debug('An error occurred: ' + e.getMessage());
+        return null; // Handle the error as per your use case
     }
 }
