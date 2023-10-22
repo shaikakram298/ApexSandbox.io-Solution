@@ -6,9 +6,10 @@ public Id insertCourse(String name, String details, Integer credits) {
         return null;
     }
     apxio__Course__c  course = new apxio__Course__c();
-    course.put('Name', name);
-    course.put('apxio__Course_Details__c', details);
-    course.put('apxio__Credits__c', String.valueOf(credits));
+    course.Name=name);
+    course.apxio__Course_Details__c=details;
+    course.apxio__Credits__c=String.valueOf(credits));
+    insert course;
     return course.Id;
     
 
