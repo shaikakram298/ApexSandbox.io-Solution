@@ -1,21 +1,15 @@
 public Id insertCourse(String name, String details, Integer credits) {
     // code here
-    List<String> valueofCredits = List<String>{'1','2','3','4'};
+    List<String> valofCredits = List<String>{'1','2','3','4'};
     String creditsString = String.valueOf(credits);
-    if(!valueofCredits.contains(creditsString)){
+    if(!valofCredits.contains(creditsString)){
         return null;
     }
-     SObject course = new SObject('apxio__Course__c');
+    apxio__Course__c  course = new apxio__Course__c();
     course.put('Name', name);
     course.put('apxio__Course_Details__c', details);
     course.put('apxio__Credits__c', String.valueOf(credits));
-
-    try {
-        insert course;
-        return (Id)course.get('Id');
-    } catch (Exception e) {
-        System.debug('An error occurred: ' + e.getMessage());
-        return null; // Handle the error as per your use case
-    }
+    return course.Id;
+    
 
 }
