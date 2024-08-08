@@ -1,22 +1,16 @@
 public String aOrAn(String word) {
     //code here
-   public static String aOrAn(String word) {
-        // Check if the input is valid
-        if (word == null || word.isEmpty()) {
+   
+    if (word == null || word.isEmpty()) {
             return '';
         }
-        // Get the first letter of the word
         Char firstLetter = word.toLowerCase().charAt(0);
-        // List of vowels
         String vowels = 'aeiou';
-        // Determine if the first letter is a vowel
         if (vowels.contains(String.valueOf(firstLetter))) {
             return 'an ' + word;
         } else {
             return 'a ' + word;
         }
-
-      //  word.append(a);
-    
+    }
 
 }
