@@ -6,7 +6,7 @@ public Decimal computeTip(Decimal total, Integer percent) {
         }
         // Compute the tip
         Double tip = (total * percentage) / 100;
-        return tip;
+        return Decimal tip;
     }
     
 }
