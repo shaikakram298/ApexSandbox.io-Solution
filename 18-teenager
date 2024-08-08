@@ -1,10 +1,11 @@
 public Boolean isTeenager(Integer age) {
-if(age>=13&&age<=19){
-    Return True;
 
-}
-else {
+if(age<13 && age>19)
+{
     return false;
+}
+else{
+    return true;
 }
 
     //code here
