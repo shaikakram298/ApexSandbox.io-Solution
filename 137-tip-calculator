@@ -1,0 +1,10 @@
+public Decimal computeTip(Decimal total, Integer percent) {
+    //code here
+     if (percentage < 0 || percentage > 100) {
+            throw new IllegalArgumentException('Percentage must be between 0 and 100');
+        }
+        // Compute the tip
+        Double tip = (totalBill * percentage) / 100;
+        return tip;
+    }
+}
