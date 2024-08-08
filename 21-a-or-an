@@ -1,15 +1,14 @@
 public String aOrAn(String word) {
     //code here
    
-    if (word == null || word.isEmpty()) {
+     if (word == null || word.isEmpty()) {
             return '';
         }
-        Char firstLetter = word.toLowerCase().charAt(0);
-        String vowels = 'aeiou';
-        if (vowels.contains(String.valueOf(firstLetter))) {
+        // Check if the word starts with a vowel using startsWith method
+        String lowerCaseWord = word.toLowerCase();
+        if (lowerCaseWord.startsWith('a') || lowerCaseWord.startsWith('e') || lowerCaseWord.startsWith('i') || lowerCaseWord.startsWith('o') || lowerCaseWord.startsWith('u')) {
             return 'an ' + word;
         } else {
             return 'a ' + word;
         }
-    }
     }
