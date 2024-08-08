@@ -5,7 +5,7 @@ public Decimal computeTip(Decimal total, Integer percent) {
             throw new IllegalArgumentException('Percentage must be between 0 and 100');
         }
         // Compute the tip
-        Double tip = (total * percentage) / 100.0;
+        Double tip = (total * percentage) / 100;
         return tip;
     }
     
