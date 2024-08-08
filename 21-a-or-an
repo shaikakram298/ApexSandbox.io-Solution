@@ -1,7 +1,7 @@
 public String aOrAn(String word) {
     //code here
    
-     if (word == null || word.isEmpty()) {
+      if (word == null || word.length() == 0) {
             return '';
         }
         // Check if the word starts with a vowel using startsWith method
@@ -11,4 +11,5 @@ public String aOrAn(String word) {
         } else {
             return 'a ' + word;
         }
+    }
     }
