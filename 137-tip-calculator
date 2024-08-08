@@ -1,11 +1,11 @@
 public Decimal computeTip(Decimal total, Integer percent) {
     //code here
     // Ensure the percentage is within the valid range
-        if (percentage < 0 || percentage > 100) {
+        if (percent < 0 || percent > 100) {
             throw new IllegalArgumentException('Percentage must be between 0 and 100');
         }
         // Compute the tip
-        Double tip = (total * percentage) / 100;
+        Double tip = (total * percent) / 100;
         return Decimal tip;
     }
     
