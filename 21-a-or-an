@@ -1,7 +1,7 @@
 public String aOrAn(String word) {
     //code here
     if (word != null && !word.isEmpty()) {
-            char firstChar = word.toLowerCase().charAt(0);
+            
             if (firstChar == 'a' || firstChar == 'e' || firstChar == 'i' || firstChar == 'o' || firstChar == 'u') {
                 return 'an ' + word;
             } else {
